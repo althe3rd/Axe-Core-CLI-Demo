@@ -1,0 +1,23 @@
+{
+  "name": "axe-core-cli-demo",
+  "version": "1.0.0",
+  "description": "Demo project showing how to use axe-core CLI to prevent deployments with accessibility issues",
+  "scripts": {
+    "test:a11y": "axe --exit index.html",
+    "test:a11y-report": "axe index.html --save results.json",
+    "serve": "npx http-server -p 8080",
+    "deploy": "npm run test:a11y && echo 'Deployment would proceed here'"
+  },
+  "keywords": [
+    "accessibility",
+    "a11y",
+    "axe-core",
+    "demo"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@axe-core/cli": "^4.10.0"
+  }
+}
+
