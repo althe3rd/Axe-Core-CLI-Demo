@@ -2,7 +2,7 @@
 
 A demonstration project showing how to use `@axe-core/cli` to detect accessibility issues and prevent deployments when violations are found.
 
-## 🎯 Purpose
+## Purpose
 
 This project demonstrates:
 - How to integrate axe-core CLI into your development workflow
@@ -10,7 +10,7 @@ This project demonstrates:
 - Common accessibility violations and how they appear in axe reports
 - Setting up GitHub Actions for automated accessibility testing
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Install Dependencies
 
@@ -39,7 +39,7 @@ npm run serve
 
 Then visit http://localhost:8080
 
-## 🐛 Intentional Accessibility Issues
+## Intentional Accessibility Issues
 
 This demo page contains the following accessibility violations:
 
@@ -52,7 +52,7 @@ This demo page contains the following accessibility violations:
 7. **Empty Heading** - h2 element with no content
 8. **Improper Interactive Element** - Div with onclick instead of proper button/link
 
-## 📊 Understanding the Output
+## Understanding the Output
 
 When you run `npm run test:a11y`, you'll see output like:
 
@@ -74,7 +74,7 @@ Process exited with code 1
 
 The `--exit` flag causes the command to exit with a non-zero code when violations are found, which blocks the deployment pipeline.
 
-## 🔄 CI/CD Integration
+## CI/CD Integration
 
 The `.github/workflows/a11y-check.yml` file demonstrates:
 
@@ -90,11 +90,11 @@ The `.github/workflows/a11y-check.yml` file demonstrates:
 4. Branch: `gh-pages`
 
 Once set up, the workflow will:
-- ✅ Run accessibility tests on every push
-- ❌ Block deployment if issues are found
-- 🚀 Deploy to GitHub Pages only when all tests pass
+- Run accessibility tests on every push
+- Block deployment if issues are found
+- Deploy to GitHub Pages only when all tests pass
 
-## 🎬 Demo Script for Screen Recording
+## Demo Script for Screen Recording
 
 ### Part 1: Show the Issues
 
@@ -151,13 +151,13 @@ To demonstrate remediation, you could fix issues one by one:
 
 Then re-run tests to show fewer violations.
 
-## 📚 Additional Resources
+## Additional Resources
 
 - [axe-core CLI Documentation](https://github.com/dequelabs/axe-core-npm/tree/develop/packages/cli)
 - [WCAG Guidelines](https://www.w3.org/WAI/WCAG21/quickref/)
 - [Deque University](https://dequeuniversity.com/)
 
-## 🎓 Teaching Points
+## Key Points
 
 - Accessibility testing should be automated, not manual
 - Catching issues early prevents costly remediation later
@@ -165,7 +165,7 @@ Then re-run tests to show fewer violations.
 - axe-core helps teams maintain accessibility standards consistently
 - CI/CD integration ensures accessibility is part of the definition of "done"
 
-## 📝 License
+## License
 
 MIT
 
