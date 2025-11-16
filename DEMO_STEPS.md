@@ -30,6 +30,11 @@ npm run test:a11y
 - This would block deployment in CI/CD
 - Different severity levels: critical, serious, moderate, minor
 
+**Note:** If you get an error, try the server-based version:
+```bash
+npm run test:a11y-server
+```
+
 ### 3. Generate Detailed Report (Optional)
 ```bash
 npm run test:a11y-report

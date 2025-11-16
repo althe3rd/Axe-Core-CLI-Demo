@@ -21,11 +21,14 @@ npm install
 ### 2. Run Accessibility Tests Locally
 
 ```bash
-# Run axe-core and exit with error if issues found
+# Run axe-core and exit with error if issues found (using file:// protocol)
 npm run test:a11y
 
 # Generate a detailed JSON report
 npm run test:a11y-report
+
+# Or test with a local server (recommended for CI/CD simulation)
+npm run test:a11y-server
 ```
 
 ### 3. Serve Locally (Optional)
